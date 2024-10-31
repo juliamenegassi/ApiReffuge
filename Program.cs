@@ -17,6 +17,21 @@ builder.Services.AddEntityFrameworkSqlServer()
     );
 
 builder.Services.AddScoped <IUsersRepositorio, UsersRepositorio>();
+builder.Services.AddScoped<IAgendamentoRepositorio, AgendamentoRepositorio>();
+builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+builder.Services.AddScoped<IConteudoRepositorio, ConteudoRepositorio>();
+builder.Services.AddScoped<IDiarioRepositorio, DiarioRepositorio>();
+builder.Services.AddScoped<IDuracaoSonoRepositorio, DuracaoSonoRepositorio>();
+builder.Services.AddScoped<IExerciciosRepositorio, ExerciciosRepositorio>();
+builder.Services.AddScoped<IPlanosRepositorio, PlanosRepositorio>();
+builder.Services.AddScoped<IProfissionalRepositorio, ProfissionalRepositorio>();
+builder.Services.AddScoped<ITermometroEmocionalRepositorio, TermometroEmocionalRepositorio>();
+builder.Services.AddScoped<ITermometroNoturnoRepositorio, TermometroNoturnoRepositorio>();
+builder.Services.AddScoped<ITipoConteudoRepositorio, TipoConteudoRepositorio>();
+builder.Services.AddScoped<ITipoEmocaoRepositorio, TipoEmocaoRepositorio>();
+builder.Services.AddScoped<ITipoEspecializacaoRepositorio, TipoEspecializacaoRepositorio>();
+builder.Services.AddScoped<ITipoExerciciosRepositorio, TipoExerciciosRepositorio>();
+builder.Services.AddScoped<ITipoSentimentoSonoRepositorio, TipoSentimentoSonoRepositorio>();
 
 builder.Services.AddCors(options =>
 {
